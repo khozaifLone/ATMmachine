@@ -15,8 +15,6 @@ public class ATMMachine {
 
     private final ATMCashPool atmCashPool;
 
-    private final ReentrantLock lock = new ReentrantLock();
-
     private Map<String, CashWithdrawRequest> transactionsOnHold;
 
     /**
